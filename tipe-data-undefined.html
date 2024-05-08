@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tipe Data Undefined</title>
+</head>
+
+<body>
+    <script>
+        let name; //variable name blm ada valuenya
+        if (name === undefined) {
+            console.info("UNDEFINED");
+        } else {
+            console.info("DEFINED");
+        }
+
+        const arrayName = ["Ahmad", "Ghozali"]; // isi array di arrayName hanya ada di index 0 dan 1
+        if (arrayName[2] === undefined) {
+            console.info("ARRAY UNDEFINED");
+        } else {
+            console.info("ARRAY DEFINED");
+        }
+
+        const person = {}; // objest person blm ada property "name" nya
+        if (person.name === undefined) {
+            console.info("OBJECT UNDEFINED");
+        } else {
+            console.info("OBJECT DEFINED");
+        }
+    </script>
+</body>
+
+</html>

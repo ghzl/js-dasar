@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JS Pop-up</title>
+</head>
+
+<body>
+    <script>
+        //pop-up alert
+        alert("Hello World");
+
+        //pop-up prompt
+        const name = prompt("Siapa nama anda ? ");
+        alert(`Hello ${name}`);
+
+        //pop-up confirm
+        const masuk = confirm("Anda yakin mau masuk ? ");
+        if (masuk) {
+            const name2 = prompt("Who are you ?");
+            alert(`Hello ${name2}`);
+        } else {
+            alert("Bye bye");
+        }
+    </script>
+</body>
+
+</html>
