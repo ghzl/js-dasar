@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Operator Ternary</title>
+</head>
+
+<body>
+    <script>
+        const nilai = 80;
+        let ucapan;
+        if (nilai >= 75) {
+            ucapan = "Selamat Anda Lulus";
+        } else {
+            ucapan = "Silahkan Coba Lagi";
+        }
+        document.writeln(`<p> ${ucapan}`);
+
+        //ternary format
+        ucapan = nilai >= 75 ? "Selamat anda lulus" : "Silahkan coba lagi";
+        document.writeln(`<p> ${ucapan}`);
+    </script>
+</body>
+
+</html>

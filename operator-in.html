@@ -11,11 +11,32 @@
         const person = {
             firstName: "Ahmad",
             lastName: "Ghozali"
-        }
-        const result = "firstName" in person;
+        };
+        //const result = "firstName" in person;
         /* melakukan pengecekan di variable object 'person' terhadap property 'firstName', 
                mengembalikan nilai true jika terdapat property 'firstName' */
-        document.writeln(`<p> ${result} </p>`);
+        //document.writeln(`<p> ${result} </p>`);
+
+        if ("firstName" in person) {
+            alert(`Hello ${person.firstName}`);
+        } else {
+            alert("Hello");
+        }
+
+        const student = {
+            firstName: "Ahmad",
+            middleName: undefined,
+            lastName: "Ghozali"
+        }
+        if ("middleName" in student) {
+            alert(`Hello ${student.middleName}`);
+        } else {
+            alert("Hello Student");
+        }
+
+        const names = [null, "Ghozali", null];
+        const result2 = 0 in names;
+        document.writeln(`<p> ${result2}`);
     </script>
 </body>
 
